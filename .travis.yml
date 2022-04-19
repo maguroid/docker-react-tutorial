@@ -7,4 +7,4 @@ before_install:
   - docker build -t maguroid/docker-react-tutorial -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true /maguroid/docker-react-tutorial npm run test
+  - docker run -e CI=true maguroid/docker-react-tutorial npm run test
